@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCollectionMainViewOwner">
+            <connections>
+                <outlet property="myView" destination="iN0-l3-epB" id="QvL-Gg-7ga"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddCollectionMainView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuJ-9N-hpM" userLabel="Container">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="quo-Kh-XLa">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXh-mY-U2u" userLabel="Add Item View Container">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add more item here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ufQ-L1-DGX" userLabel="AddItemTextField">
+                                    <rect key="frame" x="10" y="5" width="234" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na0-uh-icE">
+                                    <rect key="frame" x="254" y="10" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="46" id="Voc-ea-9rM"/>
+                                        <constraint firstAttribute="height" constant="30" id="lbW-F7-a7Y"/>
+                                    </constraints>
+                                    <state key="normal" title="Add">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Na0-uh-icE" firstAttribute="leading" secondItem="ufQ-L1-DGX" secondAttribute="trailing" constant="10" id="O5v-dV-EzB"/>
+                                <constraint firstItem="ufQ-L1-DGX" firstAttribute="leading" secondItem="qXh-mY-U2u" secondAttribute="leading" constant="10" id="QG8-bT-Nqc"/>
+                                <constraint firstAttribute="height" constant="50" id="V0P-3g-9cy"/>
+                                <constraint firstAttribute="centerY" secondItem="Na0-uh-icE" secondAttribute="centerY" id="WEb-0O-qqy"/>
+                                <constraint firstAttribute="trailing" secondItem="Na0-uh-icE" secondAttribute="trailing" constant="20" id="cTj-5J-6jy"/>
+                                <constraint firstItem="ufQ-L1-DGX" firstAttribute="top" secondItem="qXh-mY-U2u" secondAttribute="top" constant="5" id="iPu-Fb-mAn"/>
+                                <constraint firstAttribute="centerY" secondItem="ufQ-L1-DGX" secondAttribute="centerY" id="ll8-nG-0Qm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qXh-mY-U2u" secondAttribute="trailing" id="EBo-dE-wJJ"/>
+                        <constraint firstItem="qXh-mY-U2u" firstAttribute="leading" secondItem="uuJ-9N-hpM" secondAttribute="leading" id="FWW-YT-0be"/>
+                        <constraint firstItem="quo-Kh-XLa" firstAttribute="leading" secondItem="uuJ-9N-hpM" secondAttribute="leading" id="Phc-6c-mDS"/>
+                        <constraint firstAttribute="bottom" secondItem="quo-Kh-XLa" secondAttribute="bottom" id="QJi-2t-S1L"/>
+                        <constraint firstItem="qXh-mY-U2u" firstAttribute="top" secondItem="uuJ-9N-hpM" secondAttribute="top" id="bvp-14-hUT"/>
+                        <constraint firstItem="quo-Kh-XLa" firstAttribute="top" secondItem="uuJ-9N-hpM" secondAttribute="top" id="ieN-S0-M3j"/>
+                        <constraint firstAttribute="trailing" secondItem="quo-Kh-XLa" secondAttribute="trailing" id="lG8-GE-74E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uuJ-9N-hpM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Avq-jM-X9s"/>
+                <constraint firstAttribute="trailing" secondItem="uuJ-9N-hpM" secondAttribute="trailing" id="Eie-ek-u0E"/>
+                <constraint firstItem="uuJ-9N-hpM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="equ-5Z-jx8"/>
+                <constraint firstAttribute="bottom" secondItem="uuJ-9N-hpM" secondAttribute="bottom" id="h3f-3I-fSn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

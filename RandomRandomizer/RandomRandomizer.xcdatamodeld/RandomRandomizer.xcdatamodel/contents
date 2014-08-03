@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
-        <attribute name="timeStamp" optional="YES" attributeType="Date"/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Behaviour" representedClassName="Behaviour" syncable="YES">
+        <attribute name="allowRepeat" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="nSelection" optional="YES" attributeType="Integer 64" minValueString="1" defaultValueString="1" syncable="YES"/>
+        <relationship name="randomizer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Randomizer" inverseName="behaviour" inverseEntity="Randomizer" syncable="YES"/>
+    </entity>
+    <entity name="Collection" representedClassName="Collection" syncable="YES">
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CollectionItem" inverseName="collection" inverseEntity="CollectionItem" syncable="YES"/>
+        <relationship name="randomizers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Randomizer" inverseName="collection" inverseEntity="Randomizer" syncable="YES"/>
+    </entity>
+    <entity name="CollectionItem" representedClassName="CollectionItem" syncable="YES">
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="collection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Collection" inverseName="items" inverseEntity="Collection" syncable="YES"/>
+    </entity>
+    <entity name="Randomizer" representedClassName="Randomizer" syncable="YES">
+        <relationship name="behaviour" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Behaviour" inverseName="randomizer" inverseEntity="Behaviour" syncable="YES"/>
+        <relationship name="collection" maxCount="1" deletionRule="Nullify" destinationEntity="Collection" inverseName="randomizers" inverseEntity="Collection" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="Randomizer" positionX="72" positionY="-72" width="128" height="73"/>
+        <element name="Collection" positionX="-128" positionY="144" width="128" height="73"/>
+        <element name="Behaviour" positionX="99" positionY="144" width="128" height="88"/>
+        <element name="CollectionItem" positionX="-218" positionY="315" width="128" height="103"/>
     </elements>
 </model>

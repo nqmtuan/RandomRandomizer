@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTextItemViewOwner">
+            <connections>
+                <outlet property="myView" destination="iN0-l3-epB" id="fEd-rM-y16"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddTextItemView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7n-Gr-YBe" userLabel="Container">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PeY-em-HBZ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xT2-JK-UT1" userLabel="Add Item View Container">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add more item here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bjb-yJ-ZAE" userLabel="AddItemTextField">
+                                    <rect key="frame" x="10" y="5" width="234" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOq-S1-T4N">
+                                    <rect key="frame" x="254" y="10" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="Cdh-1U-qfP"/>
+                                        <constraint firstAttribute="width" constant="46" id="zWK-ad-Z4l"/>
+                                    </constraints>
+                                    <state key="normal" title="Add">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onAddItemButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="gAM-Ci-J0L"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3hK-en-t2S"/>
+                                <constraint firstItem="ZOq-S1-T4N" firstAttribute="leading" secondItem="Bjb-yJ-ZAE" secondAttribute="trailing" constant="10" id="8ko-yr-bFv"/>
+                                <constraint firstAttribute="centerY" secondItem="ZOq-S1-T4N" secondAttribute="centerY" id="FHm-bG-nC7"/>
+                                <constraint firstItem="Bjb-yJ-ZAE" firstAttribute="top" secondItem="xT2-JK-UT1" secondAttribute="top" constant="5" id="TvL-WF-4UL"/>
+                                <constraint firstAttribute="centerY" secondItem="Bjb-yJ-ZAE" secondAttribute="centerY" id="gQH-Lc-3i5"/>
+                                <constraint firstAttribute="trailing" secondItem="ZOq-S1-T4N" secondAttribute="trailing" constant="20" id="iQx-1p-SUI"/>
+                                <constraint firstItem="Bjb-yJ-ZAE" firstAttribute="leading" secondItem="xT2-JK-UT1" secondAttribute="leading" constant="10" id="wY9-1T-uMJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xT2-JK-UT1" firstAttribute="leading" secondItem="e7n-Gr-YBe" secondAttribute="leading" id="5Mk-6l-4Pj"/>
+                        <constraint firstAttribute="bottom" secondItem="PeY-em-HBZ" secondAttribute="bottom" id="7Pa-a2-kHp"/>
+                        <constraint firstAttribute="trailing" secondItem="PeY-em-HBZ" secondAttribute="trailing" id="M4L-BY-6hW"/>
+                        <constraint firstItem="PeY-em-HBZ" firstAttribute="top" secondItem="e7n-Gr-YBe" secondAttribute="top" id="OBU-w9-Nww"/>
+                        <constraint firstAttribute="trailing" secondItem="xT2-JK-UT1" secondAttribute="trailing" id="aUJ-eb-Ht1"/>
+                        <constraint firstItem="PeY-em-HBZ" firstAttribute="leading" secondItem="e7n-Gr-YBe" secondAttribute="leading" id="iEN-5W-fph"/>
+                        <constraint firstItem="xT2-JK-UT1" firstAttribute="top" secondItem="e7n-Gr-YBe" secondAttribute="top" id="zdR-5k-LZj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="e7n-Gr-YBe" secondAttribute="trailing" id="Ls7-0r-7EM"/>
+                <constraint firstItem="e7n-Gr-YBe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rtb-hD-oB1"/>
+                <constraint firstAttribute="bottom" secondItem="e7n-Gr-YBe" secondAttribute="bottom" id="mjC-pX-eEU"/>
+                <constraint firstItem="e7n-Gr-YBe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rkV-Df-mVO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addItemButton" destination="ZOq-S1-T4N" id="zkL-yx-Yf5"/>
+                <outlet property="addItemTextField" destination="Bjb-yJ-ZAE" id="vIs-Bk-2Aw"/>
+                <outlet property="tableView" destination="PeY-em-HBZ" id="R3Q-dw-rC0"/>
+            </connections>
+        </view>
+    </objects>
+</document>

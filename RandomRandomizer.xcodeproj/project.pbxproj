@@ -26,6 +26,23 @@
 		B4238C17198CF2BE007D62B8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4238BEF198CF2BD007D62B8 /* CoreData.framework */; };
 		B4238C1F198CF2BE007D62B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4238C1D198CF2BE007D62B8 /* InfoPlist.strings */; };
 		B4238C21198CF2BE007D62B8 /* RandomRandomizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C20198CF2BE007D62B8 /* RandomRandomizerTests.m */; };
+		B4238C2D198DEB92007D62B8 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C2C198DEB92007D62B8 /* HomeScreenViewController.m */; };
+		B4238C30198E6DB1007D62B8 /* CollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C2F198E6DB1007D62B8 /* CollectionItem.m */; };
+		B4238C33198E6DB2007D62B8 /* Randomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C32198E6DB2007D62B8 /* Randomizer.m */; };
+		B4238C36198E6DB2007D62B8 /* Behaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C35198E6DB2007D62B8 /* Behaviour.m */; };
+		B4238C39198E6DB2007D62B8 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C38198E6DB2007D62B8 /* Collection.m */; };
+		B4238C5A198E700F007D62B8 /* AddCollectionDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C3E198E700F007D62B8 /* AddCollectionDomainObject.m */; };
+		B4238C5B198E700F007D62B8 /* AddCollectionLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C42198E700F007D62B8 /* AddCollectionLogicManager.m */; };
+		B4238C5C198E700F007D62B8 /* AddCollectionMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C47198E700F007D62B8 /* AddCollectionMainView.m */; };
+		B4238C5D198E700F007D62B8 /* AddCollectionMainViewOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C49198E700F007D62B8 /* AddCollectionMainViewOwner.m */; };
+		B4238C5E198E700F007D62B8 /* AddCollectionViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C4C198E700F007D62B8 /* AddCollectionViewManager.m */; };
+		B4238C5F198E700F007D62B8 /* AddCollectionMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4238C50198E700F007D62B8 /* AddCollectionMainView.xib */; };
+		B4238C60198E700F007D62B8 /* AddCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C53198E700F007D62B8 /* AddCollectionViewController.m */; };
+		B4238C61198E700F007D62B8 /* AddCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C56198E700F007D62B8 /* AddCollectionViewModel.m */; };
+		B4238C62198E700F007D62B8 /* AddCollectionViewModelGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C59198E700F007D62B8 /* AddCollectionViewModelGenerator.m */; };
+		B4238C66198E7850007D62B8 /* AddTextItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C65198E7850007D62B8 /* AddTextItemView.m */; };
+		B4238C69198E7869007D62B8 /* AddTextItemViewOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = B4238C68198E7869007D62B8 /* AddTextItemViewOwner.m */; };
+		B4238C6D198E7C49007D62B8 /* AddTextItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4238C6C198E7C49007D62B8 /* AddTextItemView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +80,43 @@
 		B4238C1C198CF2BE007D62B8 /* RandomRandomizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RandomRandomizerTests-Info.plist"; sourceTree = "<group>"; };
 		B4238C1E198CF2BE007D62B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4238C20198CF2BE007D62B8 /* RandomRandomizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomRandomizerTests.m; sourceTree = "<group>"; };
+		B4238C2B198DEB92007D62B8 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeScreenViewController.h; path = Classes/HomeScreenViewController.h; sourceTree = "<group>"; };
+		B4238C2C198DEB92007D62B8 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeScreenViewController.m; path = Classes/HomeScreenViewController.m; sourceTree = "<group>"; };
+		B4238C2E198E6DB1007D62B8 /* CollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionItem.h; path = Classes/CoreDataModel/CollectionItem.h; sourceTree = "<group>"; };
+		B4238C2F198E6DB1007D62B8 /* CollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionItem.m; path = Classes/CoreDataModel/CollectionItem.m; sourceTree = "<group>"; };
+		B4238C31198E6DB2007D62B8 /* Randomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Randomizer.h; path = Classes/CoreDataModel/Randomizer.h; sourceTree = "<group>"; };
+		B4238C32198E6DB2007D62B8 /* Randomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Randomizer.m; path = Classes/CoreDataModel/Randomizer.m; sourceTree = "<group>"; };
+		B4238C34198E6DB2007D62B8 /* Behaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Behaviour.h; path = Classes/CoreDataModel/Behaviour.h; sourceTree = "<group>"; };
+		B4238C35198E6DB2007D62B8 /* Behaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Behaviour.m; path = Classes/CoreDataModel/Behaviour.m; sourceTree = "<group>"; };
+		B4238C37198E6DB2007D62B8 /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Collection.h; path = Classes/CoreDataModel/Collection.h; sourceTree = "<group>"; };
+		B4238C38198E6DB2007D62B8 /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Collection.m; path = Classes/CoreDataModel/Collection.m; sourceTree = "<group>"; };
+		B4238C3D198E700F007D62B8 /* AddCollectionDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionDomainObject.h; sourceTree = "<group>"; };
+		B4238C3E198E700F007D62B8 /* AddCollectionDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionDomainObject.m; sourceTree = "<group>"; };
+		B4238C40198E700F007D62B8 /* AddCollectionLmToVcProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionLmToVcProtocol.h; sourceTree = "<group>"; };
+		B4238C41198E700F007D62B8 /* AddCollectionLogicManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionLogicManager.h; sourceTree = "<group>"; };
+		B4238C42198E700F007D62B8 /* AddCollectionLogicManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionLogicManager.m; sourceTree = "<group>"; };
+		B4238C43198E700F007D62B8 /* AddCollectionLogicManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionLogicManagerDelegate.h; sourceTree = "<group>"; };
+		B4238C46198E700F007D62B8 /* AddCollectionMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionMainView.h; sourceTree = "<group>"; };
+		B4238C47198E700F007D62B8 /* AddCollectionMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionMainView.m; sourceTree = "<group>"; };
+		B4238C48198E700F007D62B8 /* AddCollectionMainViewOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionMainViewOwner.h; sourceTree = "<group>"; };
+		B4238C49198E700F007D62B8 /* AddCollectionMainViewOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionMainViewOwner.m; sourceTree = "<group>"; };
+		B4238C4B198E700F007D62B8 /* AddCollectionViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewManager.h; sourceTree = "<group>"; };
+		B4238C4C198E700F007D62B8 /* AddCollectionViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewManager.m; sourceTree = "<group>"; };
+		B4238C4D198E700F007D62B8 /* AddCollectionViewManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewManagerDelegate.h; sourceTree = "<group>"; };
+		B4238C4E198E700F007D62B8 /* AddCollectionVmToVcProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionVmToVcProtocol.h; sourceTree = "<group>"; };
+		B4238C50198E700F007D62B8 /* AddCollectionMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCollectionMainView.xib; sourceTree = "<group>"; };
+		B4238C52198E700F007D62B8 /* AddCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewController.h; sourceTree = "<group>"; };
+		B4238C53198E700F007D62B8 /* AddCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewController.m; sourceTree = "<group>"; };
+		B4238C55198E700F007D62B8 /* AddCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewModel.h; sourceTree = "<group>"; };
+		B4238C56198E700F007D62B8 /* AddCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewModel.m; sourceTree = "<group>"; };
+		B4238C58198E700F007D62B8 /* AddCollectionViewModelGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewModelGenerator.h; sourceTree = "<group>"; };
+		B4238C59198E700F007D62B8 /* AddCollectionViewModelGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewModelGenerator.m; sourceTree = "<group>"; };
+		B4238C64198E7850007D62B8 /* AddTextItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddTextItemView.h; path = Classes/AddTextItemView/AddTextItemView.h; sourceTree = "<group>"; };
+		B4238C65198E7850007D62B8 /* AddTextItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddTextItemView.m; path = Classes/AddTextItemView/AddTextItemView.m; sourceTree = "<group>"; };
+		B4238C67198E7869007D62B8 /* AddTextItemViewOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddTextItemViewOwner.h; path = Classes/AddTextItemView/AddTextItemViewOwner.h; sourceTree = "<group>"; };
+		B4238C68198E7869007D62B8 /* AddTextItemViewOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddTextItemViewOwner.m; path = Classes/AddTextItemView/AddTextItemViewOwner.m; sourceTree = "<group>"; };
+		B4238C6C198E7C49007D62B8 /* AddTextItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddTextItemView.xib; path = Resources/XIB/AddTextItemView.xib; sourceTree = "<group>"; };
+		B4238C6E198E7D50007D62B8 /* AddTextItemViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddTextItemViewDelegate.h; path = Classes/AddTextItemView/AddTextItemViewDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +179,10 @@
 		B4238BF1198CF2BD007D62B8 /* RandomRandomizer */ = {
 			isa = PBXGroup;
 			children = (
+				B4238C63198E7809007D62B8 /* AddTextItemView */,
+				B4238C3B198E6F43007D62B8 /* AddCollection */,
+				B4238C3A198E6DC7007D62B8 /* CoreDataModel */,
+				B4238C2A198DEB68007D62B8 /* HomeScreen */,
 				B4238BFA198CF2BD007D62B8 /* AppDelegate.h */,
 				B4238BFB198CF2BD007D62B8 /* AppDelegate.m */,
 				B4238BFD198CF2BD007D62B8 /* Main_iPhone.storyboard */,
@@ -167,6 +225,149 @@
 				B4238C1D198CF2BE007D62B8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4238C2A198DEB68007D62B8 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C2B198DEB92007D62B8 /* HomeScreenViewController.h */,
+				B4238C2C198DEB92007D62B8 /* HomeScreenViewController.m */,
+			);
+			name = HomeScreen;
+			sourceTree = "<group>";
+		};
+		B4238C3A198E6DC7007D62B8 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C37198E6DB2007D62B8 /* Collection.h */,
+				B4238C38198E6DB2007D62B8 /* Collection.m */,
+				B4238C34198E6DB2007D62B8 /* Behaviour.h */,
+				B4238C35198E6DB2007D62B8 /* Behaviour.m */,
+				B4238C31198E6DB2007D62B8 /* Randomizer.h */,
+				B4238C32198E6DB2007D62B8 /* Randomizer.m */,
+				B4238C2E198E6DB1007D62B8 /* CollectionItem.h */,
+				B4238C2F198E6DB1007D62B8 /* CollectionItem.m */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		B4238C3B198E6F43007D62B8 /* AddCollection */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C3C198E700F007D62B8 /* DomainObject */,
+				B4238C3F198E700F007D62B8 /* Logic */,
+				B4238C44198E700F007D62B8 /* View */,
+				B4238C51198E700F007D62B8 /* ViewController */,
+				B4238C54198E700F007D62B8 /* ViewModel */,
+				B4238C57198E700F007D62B8 /* ViewModelGenerator */,
+			);
+			name = AddCollection;
+			sourceTree = "<group>";
+		};
+		B4238C3C198E700F007D62B8 /* DomainObject */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C3D198E700F007D62B8 /* AddCollectionDomainObject.h */,
+				B4238C3E198E700F007D62B8 /* AddCollectionDomainObject.m */,
+			);
+			name = DomainObject;
+			path = Classes/AddCollection/DomainObject;
+			sourceTree = "<group>";
+		};
+		B4238C3F198E700F007D62B8 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C40198E700F007D62B8 /* AddCollectionLmToVcProtocol.h */,
+				B4238C41198E700F007D62B8 /* AddCollectionLogicManager.h */,
+				B4238C42198E700F007D62B8 /* AddCollectionLogicManager.m */,
+				B4238C43198E700F007D62B8 /* AddCollectionLogicManagerDelegate.h */,
+			);
+			name = Logic;
+			path = Classes/AddCollection/Logic;
+			sourceTree = "<group>";
+		};
+		B4238C44198E700F007D62B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C45198E700F007D62B8 /* MainView */,
+				B4238C4A198E700F007D62B8 /* ViewManager */,
+				B4238C4F198E700F007D62B8 /* XIB */,
+			);
+			name = View;
+			path = Classes/AddCollection/View;
+			sourceTree = "<group>";
+		};
+		B4238C45198E700F007D62B8 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C46198E700F007D62B8 /* AddCollectionMainView.h */,
+				B4238C47198E700F007D62B8 /* AddCollectionMainView.m */,
+				B4238C48198E700F007D62B8 /* AddCollectionMainViewOwner.h */,
+				B4238C49198E700F007D62B8 /* AddCollectionMainViewOwner.m */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		B4238C4A198E700F007D62B8 /* ViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C4B198E700F007D62B8 /* AddCollectionViewManager.h */,
+				B4238C4C198E700F007D62B8 /* AddCollectionViewManager.m */,
+				B4238C4D198E700F007D62B8 /* AddCollectionViewManagerDelegate.h */,
+				B4238C4E198E700F007D62B8 /* AddCollectionVmToVcProtocol.h */,
+			);
+			path = ViewManager;
+			sourceTree = "<group>";
+		};
+		B4238C4F198E700F007D62B8 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C50198E700F007D62B8 /* AddCollectionMainView.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		B4238C51198E700F007D62B8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C52198E700F007D62B8 /* AddCollectionViewController.h */,
+				B4238C53198E700F007D62B8 /* AddCollectionViewController.m */,
+			);
+			name = ViewController;
+			path = Classes/AddCollection/ViewController;
+			sourceTree = "<group>";
+		};
+		B4238C54198E700F007D62B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C55198E700F007D62B8 /* AddCollectionViewModel.h */,
+				B4238C56198E700F007D62B8 /* AddCollectionViewModel.m */,
+			);
+			name = ViewModel;
+			path = Classes/AddCollection/ViewModel;
+			sourceTree = "<group>";
+		};
+		B4238C57198E700F007D62B8 /* ViewModelGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C58198E700F007D62B8 /* AddCollectionViewModelGenerator.h */,
+				B4238C59198E700F007D62B8 /* AddCollectionViewModelGenerator.m */,
+			);
+			name = ViewModelGenerator;
+			path = Classes/AddCollection/ViewModelGenerator;
+			sourceTree = "<group>";
+		};
+		B4238C63198E7809007D62B8 /* AddTextItemView */ = {
+			isa = PBXGroup;
+			children = (
+				B4238C64198E7850007D62B8 /* AddTextItemView.h */,
+				B4238C65198E7850007D62B8 /* AddTextItemView.m */,
+				B4238C6E198E7D50007D62B8 /* AddTextItemViewDelegate.h */,
+				B4238C67198E7869007D62B8 /* AddTextItemViewOwner.h */,
+				B4238C68198E7869007D62B8 /* AddTextItemViewOwner.m */,
+				B4238C6C198E7C49007D62B8 /* AddTextItemView.xib */,
+			);
+			name = AddTextItemView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +446,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4238C6D198E7C49007D62B8 /* AddTextItemView.xib in Resources */,
 				B4238C02198CF2BD007D62B8 /* Main_iPad.storyboard in Resources */,
+				B4238C5F198E700F007D62B8 /* AddCollectionMainView.xib in Resources */,
 				B4238C0D198CF2BE007D62B8 /* Images.xcassets in Resources */,
 				B4238BFF198CF2BD007D62B8 /* Main_iPhone.storyboard in Resources */,
 				B4238BF6198CF2BD007D62B8 /* InfoPlist.strings in Resources */,
@@ -268,9 +471,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4238C0B198CF2BE007D62B8 /* DetailViewController.m in Sources */,
+				B4238C39198E6DB2007D62B8 /* Collection.m in Sources */,
+				B4238C5C198E700F007D62B8 /* AddCollectionMainView.m in Sources */,
 				B4238C08198CF2BD007D62B8 /* MasterViewController.m in Sources */,
+				B4238C69198E7869007D62B8 /* AddTextItemViewOwner.m in Sources */,
+				B4238C33198E6DB2007D62B8 /* Randomizer.m in Sources */,
+				B4238C5A198E700F007D62B8 /* AddCollectionDomainObject.m in Sources */,
 				B4238BFC198CF2BD007D62B8 /* AppDelegate.m in Sources */,
+				B4238C66198E7850007D62B8 /* AddTextItemView.m in Sources */,
+				B4238C36198E6DB2007D62B8 /* Behaviour.m in Sources */,
+				B4238C2D198DEB92007D62B8 /* HomeScreenViewController.m in Sources */,
+				B4238C5D198E700F007D62B8 /* AddCollectionMainViewOwner.m in Sources */,
+				B4238C5E198E700F007D62B8 /* AddCollectionViewManager.m in Sources */,
+				B4238C5B198E700F007D62B8 /* AddCollectionLogicManager.m in Sources */,
+				B4238C60198E700F007D62B8 /* AddCollectionViewController.m in Sources */,
+				B4238C61198E700F007D62B8 /* AddCollectionViewModel.m in Sources */,
 				B4238C05198CF2BD007D62B8 /* RandomRandomizer.xcdatamodeld in Sources */,
+				B4238C30198E6DB1007D62B8 /* CollectionItem.m in Sources */,
+				B4238C62198E700F007D62B8 /* AddCollectionViewModelGenerator.m in Sources */,
 				B4238BF8198CF2BD007D62B8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
